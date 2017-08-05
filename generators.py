@@ -2,6 +2,7 @@
 
 #string generator thing: squares = (x*x for x in [1,2,3,4,5])
 #string list thing     : squares = [x*x for x in [1,2,3,4,5])
+#test for updating
 
 students = []
 
