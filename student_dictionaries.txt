@@ -1,0 +1,6 @@
+{'Name': 'Jeremy', 'GPA': '2.22', 'Password': 'asdfasdf', 'id': '00001'}
+{'Name': 'Kart', 'GPA': '99999', 'Password': 'ididd', 'id': '00002'}
+{'Name': 'manu', 'GPA': '2.21', 'Password': 'iodnfoinx', 'id': '00003'}
+{'Name': 'Sophia', 'GPA': '2.22', 'Password': '123orind', 'id': '00004'}
+{'Name': 'John', 'GPA': '2.221', 'Password': 'asdfoinx', 'id': '00005'}
+{'Name': '', 'GPA': '', 'Password': '', 'id': '00006'}
