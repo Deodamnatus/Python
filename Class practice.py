@@ -1,8 +1,15 @@
+students = []
+
+
 class Student:
-    def add_student(self, name, student_id):
+    #dont pass self
+    def __init__(self, name, student_id=0):
         student = {"name": name, "student_id": student_id}
-        
+        students.append(student)
+    def __str__(self):
+        return "Student"
 
-student = Student()
+mark = Student('Mark', 333)
 
-print(student)
+print(students, mark)
+
