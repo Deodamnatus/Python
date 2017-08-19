@@ -2,14 +2,26 @@ students = []
 
 
 class Student:
+
+    school_name = "Bishops"
+
     #dont pass self
     def __init__(self, name, student_id=0):
-        student = {"name": name, "student_id": student_id}
-        students.append(student)
+        self.name = name
+        self.student_id = student_id
+        students.append(self)
+
     def __str__(self):
-        return "Student"
+        return "Student " + self.name
+
+    def get_name_capitalize(self):
+        return self.name.capitalize()
+
+    def get_school_name(self):
+        return self.school_name
+
 
 mark = Student('Mark', 333)
 
-print(students, mark)
+print(Student.school_name)
 
