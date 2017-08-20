@@ -25,6 +25,11 @@ class HighSchoolStudent(Student):
     #can overwrite attributes and methods
     school_name = "Bishop's Upper School"
 
+    def get_name_capitalize(self):
+        #use super to reference origonal class methods and attributes(Student)
+        origonal_value = super().get_name_capitalize()
+        return origonal_value + "-HS"
+
 james = HighSchoolStudent("james", 11)
 
 print(james.get_name_capitalize())
