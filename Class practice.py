@@ -3,7 +3,7 @@ students = []
 
 class Student:
 
-    school_name = "Bishops"
+    school_name = "Bishop's"
 
     #dont pass self
     def __init__(self, name, student_id=0):
@@ -21,7 +21,14 @@ class Student:
         return self.school_name
 
 
-mark = Student('Mark', 333)
+class HighSchoolStudent(Student):
+    #can overwrite attributes and methods
+    school_name = "Bishop's Upper School"
 
-print(Student.school_name)
+james = HighSchoolStudent("james", 11)
+
+print(james.get_name_capitalize())
+
+#mark = Student('Mark', 333)
+#print(mark, Student.school_name)
 
