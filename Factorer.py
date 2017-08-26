@@ -54,5 +54,6 @@ print ("\nPrimelist:")
 for i in primeList:
     print (i)
 '''
+
 end = time.clock()
 print ("Start: {0}\nEnd: {1}\nTotal: {2}".format(start, end, end-start))
