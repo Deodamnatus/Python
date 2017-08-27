@@ -37,18 +37,17 @@ while number >= currentPrime**2:
 
 
 # print output below based on a variety of factors
-if number == 1:
-    print ("\n\nYour number, {0}, has the following factors:".format(initialNumber))
-    for i in factors:
-        print (i)
+
+if number == initialNumber:
+    print("Your number, {0}, is prime".format(int(number)))
 else:
-    if number != initialNumber:
-        print ("\n\nYour number, {0}, has the following factors".format(initialNumber))
-        for i in factors:
-            print (i)
-        print (int(number))
-    else:
-        print("Your number, {0}, is prime".format(int(number)))
+    print("\n\nYour number, {:5000d} has the following factors:".format(initialNumber))
+    for i in factors:
+        print(i)
+    if number != 1:
+        print(int(number))
+
+
 '''
 print ("\nPrimelist:")
 for i in primeList:
