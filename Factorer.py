@@ -9,6 +9,7 @@ while number <=1:
 start = time.clock()
 initialNumber = number
 
+# list of factors of the number
 factors = []
 # prime list needed to check future primes
 primeList = []
@@ -38,11 +39,11 @@ while number >= currentPrime**2:
 
 # print output below based on whether number is prime or whether the remaining number is 1
 if number == initialNumber:
-    print("\n\nYour number, {0}, is prime".format(int(number)))
+    print("\nYour number, {0}, is prime".format(int(number)))
 else:
-    print("\n\nYour number, {0} has the following factors:".format(initialNumber))
+    print("\nYour number, {0} has the following factors:".format(initialNumber))
     for i in factors:
-        print(i, end=' ')
+        print(i)
     if number != 1:
         print(int(number))
 
