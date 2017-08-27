@@ -36,14 +36,13 @@ while number >= currentPrime**2:
     currentPrime += 1
 
 
-# print output below based on a variety of factors
-
+# print output below based on whether number is prime or whether the remaining number is 1
 if number == initialNumber:
-    print("Your number, {0}, is prime".format(int(number)))
+    print("\n\nYour number, {0}, is prime".format(int(number)))
 else:
-    print("\n\nYour number, {:5000d} has the following factors:".format(initialNumber))
+    print("\n\nYour number, {0} has the following factors:".format(initialNumber))
     for i in factors:
-        print(i)
+        print(i, end=' ')
     if number != 1:
         print(int(number))
 
@@ -55,4 +54,4 @@ for i in primeList:
 '''
 
 end = time.clock()
-print ("Start: {0}\nEnd: {1}\nTotal: {2}".format(start, end, end-start))
+print ("\nStart:\t{0}\nEnd:\t{1}\nTotal:\t{2}".format(start, end, end-start))
